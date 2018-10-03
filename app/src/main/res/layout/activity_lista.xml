@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activty.ListaActivity"
+    android:background="@drawable/wallpaper_gradiente_escuro">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lista_button_insere_empresa"
+        tools:listitem="@layout/lista_item"
+        />
+
+    <TextView
+        android:id="@+id/lista_fundo_gradiente_escuro"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@drawable/fundo_gradiente_linha_escuro"
+        app:layout_constraintBottom_toTopOf="@+id/lista_button_insere_empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lista_button_insere_empresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Inserir uma empresa"
+        android:textColor="#7a8083"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
